@@ -257,6 +257,7 @@
     window.player = new Player(CONFIG.playlist, {
       defaultVolume: CONFIG.defaultVolume,
       shuffle: CONFIG.shuffle,
+      showTrackName: CONFIG.showTrackName,
     });
 
     setupEnter();

@@ -6,7 +6,7 @@
 
    ÖNEMLİ — değişiklik görünmüyorsa:
    Tarayıcılar css/js dosyalarını önbelleğe alır (GitHub Pages 10 dakika).
-   index.html içindeki "?v=4" sayılarını 5, 6, 7... diye artırırsan herkes
+   index.html içindeki "?v=5" sayılarını 6, 7, 8... diye artırırsan herkes
    yeni sürümü anında görür.
    ========================================================================== */
 
@@ -67,6 +67,7 @@ const CONFIG = {
   autoplayOnEnter: true,   // giriş ekranına tıklayınca müzik başlasın mı
   shuffle:         false,  // çalma listesi karışık çalsın mı
   defaultVolume:   18,     // 0-100 arası. Kullanıcının seçimi hatırlanır.
+  showTrackName:   false,  // çalarda şarkı adı yazsın mı
 
   /* --- Canlı rank ---------------------------------------------------------
      Rank verisi GitHub Actions tarafından assets/rank.json dosyasına yazılır

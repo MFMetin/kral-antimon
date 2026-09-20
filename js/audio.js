@@ -135,11 +135,16 @@ class Player {
 
     this.el.bar.classList.remove('has-error');
     this.el.audio.src = t.src;
-    this.el.name.textContent = label;
-    this.el.track.title = label;
 
-    // uzun isim kayan yazı olsun
-    this.el.name.classList.toggle('marquee', label.length > 26);
+    if (this.opts.showTrackName === false) {
+      // Parça adı gizli: tooltip'e de sızmasın diye hiç yazılmıyor
+      this.el.track.hidden = true;
+    } else {
+      this.el.name.textContent = label;
+      this.el.track.title = label;
+      // uzun isim kayan yazı olsun
+      this.el.name.classList.toggle('marquee', label.length > 26);
+    }
 
     if (autoplay) this.play();
   }
