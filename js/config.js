@@ -6,7 +6,7 @@
 
    ÖNEMLİ — değişiklik görünmüyorsa:
    Tarayıcılar css/js dosyalarını önbelleğe alır (GitHub Pages 10 dakika).
-   index.html içindeki "?v=12" sayılarını 13, 14, 15... diye artırırsan herkes
+   index.html içindeki "?v=13" sayılarını 14, 15, 16... diye artırırsan herkes
    yeni sürümü anında görür.
    ========================================================================== */
 
@@ -93,6 +93,9 @@ const CONFIG = {
     kenBurns:  true,     // yavaş zoom/kaydırma efekti
     parallax:  true,     // fareyle hafif kayma
     remember:  true,     // seçimi tarayıcıda hatırla
+    slideshow:     true, // şampiyonun skinleri arasında slayt gösterisi
+    slideInterval: 5000, // skinler arası süre (ms)
+    maxSkins:      0,    // 0 = tüm skinler, 8 yazarsan ilk 8 skin
   },
 
   /* --- Görsel ayarlar ---------------------------------------------------- */

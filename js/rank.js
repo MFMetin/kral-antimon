@@ -261,6 +261,7 @@
 
     // Şampiyon arka planı: kart işaretlemesini bağla ve hatırlanan seçimi geri yükle
     if (typeof ChampBG !== 'undefined' && bgCfg().enabled !== false) {
+      ChampBG.setVersion(data.ddragonVersion);
       ChampBG.onChange(paintActiveChamp);
       const known = [].concat(data.champions || [], data.mastery || []);
       ChampBG.restore(known);
