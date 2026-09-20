@@ -245,8 +245,8 @@
       stats.hidden = stats.children.length === 0;
     }
 
-    // Güncelleme zamanı
-    if (data.updatedAt) {
+    // Güncelleme zamanı (config.rank.showUpdated ile kapatılabilir)
+    if (cfg().showUpdated !== false && data.updatedAt) {
       const t = document.getElementById('rank-updated');
       if (t) {
         const d = new Date(data.updatedAt);

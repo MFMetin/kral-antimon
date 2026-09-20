@@ -6,7 +6,7 @@
 
    ÖNEMLİ — değişiklik görünmüyorsa:
    Tarayıcılar css/js dosyalarını önbelleğe alır (GitHub Pages 10 dakika).
-   index.html içindeki "?v=11" sayılarını 12, 13, 14... diye artırırsan herkes
+   index.html içindeki "?v=12" sayılarını 13, 14, 15... diye artırırsan herkes
    yeni sürümü anında görür.
    ========================================================================== */
 
@@ -81,6 +81,7 @@ const CONFIG = {
     showChamps: true,   // "son maçlarda en çok" bölümü
     showMastery: true,  // "en yüksek ustalık" bölümü
     showRecent: false,  // "LAST 20 GAMES ... KDA" satırı
+    showUpdated: false, // "rank updated: ..." satırı
   },
 
   /* --- Şampiyon arka planı -------------------------------------------------
