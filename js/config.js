@@ -15,6 +15,11 @@ const CONFIG = {
   /* --- Büyük başlıkta yazacak isim --------------------------------------- */
   title: "Kral Antimon",
 
+  /* --- Başlığın altındaki LoL nicki --------------------------------------
+     Başlığın hemen altında altın harflerle görünür; üzerine tıklayınca
+     panoya kopyalanır. "" (boş) yaparsan satır hiç görünmez.            */
+  riotId: "Antimon#tilt",
+
   /* --- Başlığın altındaki kısa yazı -------------------------------------- */
   tagline: "ADC main · bot lane sovereign",
 

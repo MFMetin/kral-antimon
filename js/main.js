@@ -106,6 +106,56 @@
     });
   }
 
+  /* ------------------------------------------------------------- lol nick */
+  function renderRiotId() {
+    const box = $('#riot-id');
+    const nick = (CONFIG.riotId || '').toString().trim();
+
+    if (!nick) { box.hidden = true; return; }
+
+    box.hidden = false;
+    $('#riot-name').textContent = nick;
+    $('#riot-hint').textContent = 'kopyalandı';
+    box.setAttribute('aria-label', nick + ' — kopyalamak için tıkla');
+    box.title = 'Kopyala';
+
+    let timer = 0;
+
+    function flash() {
+      $('#riot-live').textContent = nick + ' kopyalandı';
+      box.classList.add('copied');
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        box.classList.remove('copied');
+        $('#riot-live').textContent = '';
+      }, 1600);
+    }
+
+    // Eski tarayıcılar / http sayfalar için yedek yöntem
+    function legacyCopy(text) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.cssText = 'position:fixed;top:0;left:-9999px;opacity:0';
+      document.body.appendChild(ta);
+      ta.select();
+      let ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+      ta.remove();
+      return ok;
+    }
+
+    box.addEventListener('click', () => {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(nick).then(flash, () => {
+          if (legacyCopy(nick)) flash();
+        });
+      } else if (legacyCopy(nick)) {
+        flash();
+      }
+    });
+  }
+
   /* --------------------------------------------------------------- avatar */
   function renderAvatar() {
     const img = $('#avatar');
@@ -255,6 +305,7 @@
     }
 
     renderTitle();
+    renderRiotId();
     renderAvatar();
     $('#tagline').textContent = CONFIG.tagline || '';
     $('#tagline').hidden = !CONFIG.tagline;

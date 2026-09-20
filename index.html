@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=15">
+<link rel="stylesheet" href="css/style.css?v=16">
 </head>
 <body>
 
@@ -65,6 +65,21 @@
       <span class="letters" id="letters" aria-hidden="true"></span>
     </h1>
 
+    <button class="riot-id" id="riot-id" type="button" hidden>
+      <span class="riot-name" id="riot-name"></span>
+      <span class="riot-copy" aria-hidden="true">
+        <svg class="i-copy" viewBox="0 0 24 24">
+          <rect x="9" y="8.5" width="11" height="12.5" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/>
+          <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M15.6 5.9V5.4A2.4 2.4 0 0 0 13.2 3H6.4A2.4 2.4 0 0 0 4 5.4v9.2A2.4 2.4 0 0 0 6.4 17h.7"/>
+        </svg>
+        <svg class="i-check" viewBox="0 0 24 24">
+          <path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m5 12.6 4.6 4.6L19 6.8"/>
+        </svg>
+      </span>
+      <span class="riot-hint" id="riot-hint" aria-hidden="true"></span>
+      <span class="sr-only" id="riot-live" role="status" aria-live="polite"></span>
+    </button>
+
     <div class="divider" aria-hidden="true"><span></span></div>
 
     <p class="tagline" id="tagline"></p>
@@ -109,11 +124,11 @@
 
 <audio id="audio" preload="none"></audio>
 
-<script src="js/config.js?v=15"></script>
-<script src="js/canvas.js?v=15"></script>
-<script src="js/audio.js?v=15"></script>
-<script src="js/main.js?v=15"></script>
-<script src="js/champbg.js?v=15"></script>
-<script src="js/rank.js?v=15"></script>
+<script src="js/config.js?v=16"></script>
+<script src="js/canvas.js?v=16"></script>
+<script src="js/audio.js?v=16"></script>
+<script src="js/main.js?v=16"></script>
+<script src="js/champbg.js?v=16"></script>
+<script src="js/rank.js?v=16"></script>
 </body>
 </html>
