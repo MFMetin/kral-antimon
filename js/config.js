@@ -6,7 +6,7 @@
 
    ÖNEMLİ — değişiklik görünmüyorsa:
    Tarayıcılar css/js dosyalarını önbelleğe alır (GitHub Pages 10 dakika).
-   index.html içindeki "?v=10" sayılarını 11, 12, 13... diye artırırsan herkes
+   index.html içindeki "?v=11" sayılarını 12, 13, 14... diye artırırsan herkes
    yeni sürümü anında görür.
    ========================================================================== */
 
@@ -33,7 +33,7 @@ const CONFIG = {
     rank:   "Master",
     mains:  ["Ezreal", "Lucian", "Caitlyn"],
     kda:    "",       // boş = KDA rozeti hiç görünmez
-    server: "TR",
+    server: "",     // boş = Server rozeti görünmez
   },
 
   /* --- Sosyal linkler -----------------------------------------------------
