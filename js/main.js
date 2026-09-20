@@ -248,6 +248,12 @@
 
     if (CONFIG.lolCursor !== false) document.body.classList.add('lol-cursor');
 
+    // Kart saydamlığı (fareli cihazlarda; hover'da tam opak olur)
+    if (CONFIG.cardOpacity != null) {
+      const o = Math.max(0.2, Math.min(1, Number(CONFIG.cardOpacity) || 1));
+      document.documentElement.style.setProperty('--card-fade', String(o));
+    }
+
     renderTitle();
     renderAvatar();
     $('#tagline').textContent = CONFIG.tagline || '';

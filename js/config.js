@@ -6,7 +6,7 @@
 
    ÖNEMLİ — değişiklik görünmüyorsa:
    Tarayıcılar css/js dosyalarını önbelleğe alır (GitHub Pages 10 dakika).
-   index.html içindeki "?v=14" sayılarını 15, 16, 17... diye artırırsan herkes
+   index.html içindeki "?v=15" sayılarını 16, 17, 18... diye artırırsan herkes
    yeni sürümü anında görür.
    ========================================================================== */
 
@@ -102,5 +102,7 @@ const CONFIG = {
   arrowDensity:  1.0,   // arka plandaki ok yağmurunun sıklığı (0.5 az, 2 çok)
   dustDensity:   1.0,   // altın toz yoğunluğu (0.5 az, 2 çok)
   cardTilt:      true,  // fareyle karta 3B eğilme efekti
+  cardOpacity:   0.75,  // kartın normal saydamlığı; üzerine gelince 1 olur
+                        // (1 = efekt kapalı, dokunmatik cihazlarda hep 1)
   lolCursor:     true,  // LoL'un klasik altın el imleci
 };
