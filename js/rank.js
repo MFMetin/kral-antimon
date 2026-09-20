@@ -155,8 +155,10 @@
         sub.textContent = c.games + ' games · ' + c.winrate + '%';
         item.title = c.name + ' — ' + c.games + ' games, ' + c.winrate + '% win rate, ' + c.kda + ' KDA';
       } else if (c.points != null) {
-        sub.textContent = Math.round(c.points / 1000) + 'K mastery';
-        item.title = c.name + ' — ' + c.points.toLocaleString('en-US') + ' mastery points';
+        const pts = Math.round(c.points / 1000) + 'K';
+        sub.textContent = c.level ? 'Lv ' + c.level + ' · ' + pts : pts + ' mastery';
+        item.title = c.name + ' — mastery level ' + (c.level || '?') + ', ' +
+                     c.points.toLocaleString('en-US') + ' points';
       }
 
       item.append(pic, nm, sub);
@@ -191,13 +193,14 @@
       host.appendChild(line);
     }
 
-    // En çok oynananlar: önce son maçlar, yoksa ustalık
-    if (cfg().showChamps !== false) {
-      if (data.champions && data.champions.length) {
-        host.appendChild(champRow(data.champions, 'Most played recently'));
-      } else if (data.mastery && data.mastery.length) {
-        host.appendChild(champRow(data.mastery, 'Top mastery'));
-      }
+    // Son maçlarda en çok oynananlar
+    if (cfg().showChamps !== false && data.champions && data.champions.length) {
+      host.appendChild(champRow(data.champions, 'Most played recently'));
+    }
+
+    // En yüksek ustalık — son maç verisi yoksa tek başına da gösterilir
+    if (cfg().showMastery !== false && data.mastery && data.mastery.length) {
+      host.appendChild(champRow(data.mastery, 'Highest mastery'));
     }
 
     // Canlı veriyle çakışan elle yazılmış rozetleri kaldır
