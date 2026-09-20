@@ -54,6 +54,30 @@ body {
 
 [hidden] { display: none !important; }
 
+/* ------------------------------------------------------- LoL el imleci --
+   Riot'un klasik altın el imleci. Hotspot (10 9) = parmak ucu.
+   config.js -> lolCursor: false yaparsan body'ye sınıf eklenmez ve
+   tarayıcının kendi imleci geri gelir.                                   */
+body.lol-cursor,
+body.lol-cursor a,
+body.lol-cursor button,
+body.lol-cursor input,
+body.lol-cursor select,
+body.lol-cursor textarea,
+body.lol-cursor label,
+body.lol-cursor [role="button"],
+body.lol-cursor .enter {
+  cursor: url("../assets/cursor/hand.png") 10 9, auto;
+}
+
+body.lol-cursor:active,
+body.lol-cursor a:active,
+body.lol-cursor button:active,
+body.lol-cursor [role="button"]:active,
+body.lol-cursor .enter:active {
+  cursor: url("../assets/cursor/hand-press.png") 10 9, auto;
+}
+
 :focus-visible {
   outline: 2px solid var(--gold-2);
   outline-offset: 3px;

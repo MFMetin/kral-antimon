@@ -246,6 +246,8 @@
       return;
     }
 
+    if (CONFIG.lolCursor !== false) document.body.classList.add('lol-cursor');
+
     renderTitle();
     renderAvatar();
     $('#tagline').textContent = CONFIG.tagline || '';
