@@ -6,7 +6,7 @@
 
    ÖNEMLİ — değişiklik görünmüyorsa:
    Tarayıcılar css/js dosyalarını önbelleğe alır (GitHub Pages 10 dakika).
-   index.html içindeki "?v=8" sayılarını 9, 10, 11... diye artırırsan herkes
+   index.html içindeki "?v=9" sayılarını 10, 11, 12... diye artırırsan herkes
    yeni sürümü anında görür.
    ========================================================================== */
 
@@ -49,6 +49,7 @@ const CONFIG = {
     { name: "Discord",          url: "https://discord.com/users/251999600318218240",        icon: "discord" },
     { name: "League of Graphs", url: "https://www.leagueofgraphs.com/summoner/tr/Antimon-tilt", icon: "leagueofgraphs" },
     { name: "Steam",            url: "https://steamcommunity.com/profiles/76561198201475499/", icon: "steam" },
+    { name: "Spotify",          url: "https://open.spotify.com/user/thearthquake",             icon: "spotify" },
   ],
 
   /* --- Çalma listesi ------------------------------------------------------
