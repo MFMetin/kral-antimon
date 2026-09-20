@@ -6,7 +6,7 @@
 
    ÖNEMLİ — değişiklik görünmüyorsa:
    Tarayıcılar css/js dosyalarını önbelleğe alır (GitHub Pages 10 dakika).
-   index.html içindeki "?v=3" sayılarını 4, 5, 6... diye artırırsan herkes
+   index.html içindeki "?v=4" sayılarını 5, 6, 7... diye artırırsan herkes
    yeni sürümü anında görür.
    ========================================================================== */
 
@@ -43,11 +43,10 @@ const CONFIG = {
      İstemediğin satırın başına // koyarsan o ikon görünmez.
      Yeni satır eklemek için mevcut birini kopyalaman yeterli.            */
   socials: [
-    // Discord: aşağıdaki KULLANICI_ID yerine kendi Discord kullanıcı ID'ni yaz.
-    // Nasıl bulunur: Discord → Ayarlar → Gelişmiş → "Geliştirici Modu"nu aç,
-    // sonra sol altta kendi adına sağ tıkla → "Kullanıcı Kimliğini Kopyala".
-    // 18-19 haneli bir sayı gelir, örn: 312745829301452801
-    { name: "Discord",          url: "https://discord.com/users/KULLANICI_ID",              icon: "discord" },
+    // Discord ID'ni değiştirmen gerekirse: bir yazı kanalına \@kullanıcıadın
+    // yazıp gönder; mesaj <@123456789> şeklinde görünür, aradaki sayı ID'ndir.
+    // Sunucu daveti de kullanabilirsin: url: "https://discord.gg/KOD"
+    { name: "Discord",          url: "https://discord.com/users/251999600318218240",        icon: "discord" },
     { name: "League of Graphs", url: "https://www.leagueofgraphs.com/summoner/tr/Antimon-tilt", icon: "leagueofgraphs" },
     { name: "Steam",            url: "https://steamcommunity.com/profiles/76561198201475499/", icon: "steam" },
   ],
