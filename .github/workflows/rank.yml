@@ -1,0 +1,49 @@
+name: Rank güncelle
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # 30 dakikada bir (GitHub yoğunlukta biraz geciktirebilir)
+  workflow_dispatch:          # Actions sekmesinden elle de çalıştırılabilir
+  push:
+    paths:
+      - 'scripts/fetch-rank.mjs'
+      - '.github/workflows/rank.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rank
+  cancel-in-progress: false
+
+jobs:
+  rank:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Riot API'den rank verisini çek
+        env:
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+          # ---- kendi bilgilerinle değiştir ----
+          RIOT_ID: 'Antimon#tilt'
+          PLATFORM: 'tr1'       # eun1 / euw1 / na1 ...
+          REGION: 'europe'      # americas / asia / sea
+          MATCH_COUNT: '20'
+        run: node scripts/fetch-rank.mjs
+
+      - name: Değiştiyse commit'le
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/rank.json
+          if git diff --staged --quiet; then
+            echo "Değişiklik yok, commit atlanıyor."
+          else
+            git commit -m "chore: rank güncellendi [skip ci]"
+            git push
+          fi

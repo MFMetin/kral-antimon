@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kral Antimon</title>
+<meta name="description" content="Antimon — ADC main. Bot lane sovereign.">
+<meta name="theme-color" content="#07070a">
+<meta property="og:title" content="Kral Antimon">
+<meta property="og:description" content="ADC main · bot lane sovereign">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+
+<!-- ============ TIKLA-GİR EKRANI ============ -->
+<div id="enter" class="enter" role="button" tabindex="0" aria-label="Click to enter">
+  <div class="enter-inner">
+    <div class="enter-crown" aria-hidden="true">
+      <svg viewBox="0 0 64 44" width="64" height="44">
+        <path fill="currentColor" d="M4 14 14 26 22 6l10 20L42 6l8 20L60 14l-5 26H9L4 14Z"/>
+        <rect fill="currentColor" x="9" y="36" width="46" height="5" rx="2.5"/>
+      </svg>
+    </div>
+    <p class="enter-text">enter the realm</p>
+    <p class="enter-sub">click</p>
+  </div>
+</div>
+
+<!-- ============ İÇERİK ============ -->
+<main id="site" class="site" aria-hidden="true">
+  <section class="card" id="card">
+
+    <div class="avatar-wrap">
+      <div class="avatar-ring" aria-hidden="true"></div>
+      <div class="avatar-inner">
+        <img id="avatar" class="avatar" alt="" hidden>
+        <div id="avatar-fallback" class="avatar-fallback" aria-hidden="true">
+          <svg viewBox="0 0 64 44" width="40" height="28">
+            <path fill="currentColor" d="M4 14 14 26 22 6l10 20L42 6l8 20L60 14l-5 26H9L4 14Z"/>
+            <rect fill="currentColor" x="9" y="36" width="46" height="5" rx="2.5"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="title">
+      <span class="sr-only" id="title-sr"></span>
+      <span class="letters" id="letters" aria-hidden="true"></span>
+    </h1>
+
+    <div class="divider" aria-hidden="true"><span></span></div>
+
+    <p class="tagline" id="tagline"></p>
+
+    <div class="rank" id="rank" hidden></div>
+
+    <ul class="stats" id="stats"></ul>
+
+    <p class="rank-updated" id="rank-updated" hidden></p>
+
+    <nav class="socials" id="socials" aria-label="Social links"></nav>
+
+  </section>
+</main>
+
+<!-- ============ MÜZİK ÇALAR ============ -->
+<div class="player" id="player" hidden>
+  <button class="pbtn" id="prev" type="button" aria-label="Previous track">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 6h2v12H7zM19 6v12l-9-6z"/></svg>
+  </button>
+
+  <button class="pbtn pbtn-main" id="toggle" type="button" aria-label="Play">
+    <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13l11-6.5z"/></svg>
+    <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 5h3.2v14H7zM13.8 5H17v14h-3.2z"/></svg>
+  </button>
+
+  <button class="pbtn" id="next" type="button" aria-label="Next track">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15 6h2v12h-2zM5 6l9 6-9 6z"/></svg>
+  </button>
+
+  <div class="track" id="track" title="">
+    <span class="track-name" id="track-name">—</span>
+  </div>
+
+  <button class="pbtn" id="mute" type="button" aria-label="Mute">
+    <svg class="i-vol" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 9h3.5L12 5v14L7.5 15H4zM15.5 8.6a4.6 4.6 0 0 1 0 6.8l1.4 1.4a6.6 6.6 0 0 0 0-9.6z"/></svg>
+    <svg class="i-mute" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 9h3.5L12 5v14L7.5 15H4zM21 9.4 19.6 8l-2.1 2.1L15.4 8 14 9.4l2.1 2.1L14 13.6 15.4 15l2.1-2.1 2.1 2.1 1.4-1.4-2.1-2.1z"/></svg>
+  </button>
+
+  <input class="vol" id="volume" type="range" min="0" max="100" step="1" value="45" aria-label="Volume">
+</div>
+
+<audio id="audio" preload="none"></audio>
+
+<script src="js/config.js"></script>
+<script src="js/canvas.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/main.js"></script>
+<script src="js/rank.js"></script>
+</body>
+</html>

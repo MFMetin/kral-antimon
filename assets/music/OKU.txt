@@ -1,0 +1,1 @@
+# Bu klasöre şarkı dosyalarını (.mp3) at, sonra js/config.js içindeki playlist listesine ekle.

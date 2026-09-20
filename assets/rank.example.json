@@ -1,0 +1,17 @@
+{
+  "updatedAt": "2026-09-20T13:45:00.000Z",
+  "riotId": "Antimon#EUW",
+  "platform": "euw1",
+  "ddragonVersion": "14.19.1",
+  "queues": {
+    "solo": { "tier": "DIAMOND", "division": "IV", "lp": 47, "wins": 128, "losses": 104, "winrate": 55, "hotStreak": false },
+    "flex": { "tier": "PLATINUM", "division": "II", "lp": 12, "wins": 31, "losses": 34, "winrate": 48, "hotStreak": false }
+  },
+  "recent": { "games": 20, "wins": 12, "losses": 8, "winrate": 60, "kills": 9.4, "deaths": 5.1, "assists": 7.8, "kda": 3.37, "queue": "Ranked Solo/Duo" },
+  "champions": [
+    { "id": "Ezreal", "name": "Ezreal", "games": 8, "wins": 5, "winrate": 63, "kda": 4.2, "icon": "https://ddragon.leagueoflegends.com/cdn/14.19.1/img/champion/Ezreal.png" },
+    { "id": "Kaisa", "name": "Kai'Sa", "games": 6, "wins": 4, "winrate": 67, "kda": 3.9, "icon": "https://ddragon.leagueoflegends.com/cdn/14.19.1/img/champion/Kaisa.png" },
+    { "id": "Jhin", "name": "Jhin", "games": 4, "wins": 2, "winrate": 50, "kda": 2.8, "icon": "https://ddragon.leagueoflegends.com/cdn/14.19.1/img/champion/Jhin.png" }
+  ],
+  "mastery": []
+}

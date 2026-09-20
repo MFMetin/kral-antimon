@@ -1,0 +1,89 @@
+{
+  "updatedAt": "2026-09-20T10:53:25.910Z",
+  "riotId": "Antimon#tilt",
+  "platform": "tr1",
+  "queues": {
+    "flex": {
+      "tier": "MASTER",
+      "division": "I",
+      "lp": 453,
+      "wins": 47,
+      "losses": 33,
+      "winrate": 59,
+      "hotStreak": false
+    },
+    "solo": {
+      "tier": "MASTER",
+      "division": "I",
+      "lp": 221,
+      "wins": 213,
+      "losses": 197,
+      "winrate": 52,
+      "hotStreak": false
+    }
+  },
+  "recent": {
+    "games": 20,
+    "wins": 12,
+    "losses": 8,
+    "winrate": 60,
+    "kills": 7,
+    "deaths": 7.3,
+    "assists": 8.1,
+    "kda": 2.09,
+    "queue": "Ranked Solo/Duo"
+  },
+  "champions": [
+    {
+      "id": "Caitlyn",
+      "name": "Caitlyn",
+      "games": 5,
+      "wins": 3,
+      "winrate": 60,
+      "kda": 2.1,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Caitlyn.png"
+    },
+    {
+      "id": "Kaisa",
+      "name": "Kai'Sa",
+      "games": 4,
+      "wins": 3,
+      "winrate": 75,
+      "kda": 2.48,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Kaisa.png"
+    },
+    {
+      "id": "Renekton",
+      "name": "Renekton",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50,
+      "kda": 1.31,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Renekton.png"
+    }
+  ],
+  "mastery": [
+    {
+      "id": "Ezreal",
+      "name": "Ezreal",
+      "points": 513919,
+      "level": 49,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Ezreal.png"
+    },
+    {
+      "id": "Lucian",
+      "name": "Lucian",
+      "points": 362812,
+      "level": 36,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Lucian.png"
+    },
+    {
+      "id": "Caitlyn",
+      "name": "Caitlyn",
+      "points": 301630,
+      "level": 30,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Caitlyn.png"
+    }
+  ],
+  "ddragonVersion": "16.18.1"
+}
