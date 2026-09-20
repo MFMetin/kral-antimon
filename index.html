@@ -13,10 +13,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=7">
+<link rel="stylesheet" href="css/style.css?v=8">
 </head>
 <body>
 
+<div class="champ-bg" id="champ-bg" aria-hidden="true">
+  <div class="cb-layer"></div>
+  <div class="cb-layer"></div>
+</div>
 <canvas id="bg" aria-hidden="true"></canvas>
 <div class="vignette" aria-hidden="true"></div>
 
@@ -35,6 +39,11 @@
 </div>
 
 <!-- ============ İÇERİK ============ -->
+<button class="champ-reset" id="champ-reset" type="button" hidden>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M7 7l10 10M17 7 7 17"/></svg>
+  <span class="cr-name"></span>
+</button>
+
 <main id="site" class="site" aria-hidden="true">
   <section class="card" id="card">
 
@@ -100,10 +109,11 @@
 
 <audio id="audio" preload="none"></audio>
 
-<script src="js/config.js?v=7"></script>
-<script src="js/canvas.js?v=7"></script>
-<script src="js/audio.js?v=7"></script>
-<script src="js/main.js?v=7"></script>
-<script src="js/rank.js?v=7"></script>
+<script src="js/config.js?v=8"></script>
+<script src="js/canvas.js?v=8"></script>
+<script src="js/audio.js?v=8"></script>
+<script src="js/main.js?v=8"></script>
+<script src="js/champbg.js?v=8"></script>
+<script src="js/rank.js?v=8"></script>
 </body>
 </html>

@@ -30,7 +30,11 @@ html, body {
 
 body {
   margin: 0;
-  background: var(--ink);
+  /* Taban gradient eskiden canvas'a çiziliyordu; canvas artık saydam olduğu
+     için (şampiyon splash'i altında durabilsin diye) buraya taşındı. */
+  background:
+    radial-gradient(120% 95% at 50% 66%, #17120a 0%, #0c0a08 40%, #050506 100%),
+    var(--ink);
   color: var(--text);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
@@ -57,23 +61,73 @@ body {
 }
 
 /* ------------------------------------------------------------- arka plan */
+/* Katman sırası:  0 şampiyon splash → 1 ok yağmuru canvas → 2 vinyet → 10 içerik */
+
+.champ-bg {
+  --cb-x: 0px;
+  --cb-y: 0px;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.cb-layer {
+  position: absolute;
+  inset: -4%;                      /* paralaks kayması kenarda boşluk açmasın */
+  background-position: center 22%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: translate3d(var(--cb-x), var(--cb-y), 0) scale(1.04);
+  transition: opacity 1s ease;
+  will-change: opacity, transform;
+}
+
+.cb-layer.is-on {
+  opacity: 1;
+  animation: kenburns 30s ease-in-out infinite alternate;
+}
+
+.champ-bg.no-motion .cb-layer.is-on { animation: none; }
+
+@keyframes kenburns {
+  from { transform: translate3d(var(--cb-x), var(--cb-y), 0) scale(1.04); }
+  to   { transform: translate3d(calc(var(--cb-x) - 14px), calc(var(--cb-y) - 10px), 0) scale(1.13); }
+}
+
 #bg {
   position: fixed;
   inset: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: 1;
   display: block;
 }
 
 .vignette {
   position: fixed;
   inset: 0;
-  z-index: 1;
+  z-index: 2;
   pointer-events: none;
+  transition: background .9s ease;
   background:
     radial-gradient(120% 90% at 50% 55%, transparent 35%, rgba(0,0,0,.55) 100%),
     linear-gradient(to bottom, rgba(0,0,0,.45), transparent 22%, transparent 78%, rgba(0,0,0,.55));
+}
+
+/* Splash açıkken metin okunabilirliği için vinyeti koyulaştır */
+body.has-champ-bg .vignette {
+  background:
+    radial-gradient(115% 85% at 50% 52%, rgba(6,5,4,.35) 0%, rgba(4,3,3,.78) 60%, rgba(2,2,2,.92) 100%),
+    linear-gradient(to bottom, rgba(0,0,0,.6), rgba(0,0,0,.25) 25%, rgba(0,0,0,.3) 70%, rgba(0,0,0,.72));
+}
+
+/* Kart da splash üzerinde biraz daha opak dursun */
+body.has-champ-bg .card {
+  background: linear-gradient(160deg, rgba(26,20,12,.84), rgba(8,7,6,.9));
+  border-color: rgba(255,208,115,.34);
 }
 
 /* ---------------------------------------------------------- giriş ekranı */
@@ -482,17 +536,76 @@ body.entered .rank {
   justify-items: center;
   gap: 4px;
   padding: 10px 6px;
+  margin: 0;
   border-radius: 13px;
   background: rgba(255,210,120,.04);
   border: 1px solid rgba(255,200,100,.13);
-  transition: border-color .2s ease, background .2s ease, transform .2s ease;
+  transition: border-color .2s ease, background .2s ease,
+              transform .2s ease, box-shadow .2s ease;
+  /* button olarak üretildiğinde tarayıcı varsayılanlarını sıfırla */
+  font: inherit;
+  color: inherit;
+  text-align: center;
+  -webkit-appearance: none;
+  appearance: none;
 }
+
+button.champ { cursor: pointer; }
 
 .champ:hover {
   transform: translateY(-3px);
   background: rgba(255,210,120,.09);
   border-color: rgba(255,215,130,.4);
 }
+
+/* Arka planı şu an bu şampiyona ait */
+.champ.is-active {
+  background: rgba(255,210,120,.13);
+  border-color: rgba(255,218,135,.7);
+  box-shadow: 0 0 0 1px rgba(255,205,110,.25), 0 8px 24px rgba(0,0,0,.45),
+              0 0 20px rgba(255,180,70,.25);
+}
+
+.champ.is-active .champ-pic {
+  border-color: rgba(255,222,150,.75);
+  box-shadow: 0 0 14px rgba(255,190,80,.4);
+}
+
+.champ.is-active .champ-name { color: var(--gold-1); }
+
+/* ------------------------------------------------- arka planı temizle butonu */
+.champ-reset {
+  position: fixed;
+  z-index: 25;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 13px 8px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  font: inherit;
+  font-size: .72rem;
+  letter-spacing: .06em;
+  color: var(--gold-2);
+  background: linear-gradient(160deg, rgba(28,22,13,.86), rgba(10,9,8,.9));
+  border: 1px solid rgba(255,200,100,.28);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 28px rgba(0,0,0,.5);
+  transition: color .2s ease, border-color .2s ease, transform .2s ease;
+  animation: fadeUp .5s ease backwards;
+}
+
+.champ-reset:hover {
+  color: var(--gold-1);
+  border-color: rgba(255,215,130,.6);
+  transform: translateY(-2px);
+}
+
+.champ-reset svg { width: 14px; height: 14px; flex: none; }
+.cr-name { white-space: nowrap; max-width: 34vw; overflow: hidden; text-overflow: ellipsis; }
 
 .champ-pic {
   width: 42px;
@@ -746,6 +859,8 @@ body.entered .player {
   .track { max-width: 96px; }
   .vol { width: 54px; }
   .player { gap: 5px; padding: 8px 10px; bottom: 14px; }
+  .champ-reset { top: 10px; right: 10px; padding: 7px 11px 7px 9px; font-size: .66rem; }
+  .cr-name { max-width: 30vw; }
 }
 
 @media (max-width: 360px) {
@@ -764,4 +879,6 @@ body.entered .player {
   .rank, .rank-updated,
   .card { opacity: 1 !important; transform: none !important; }
   .enter-inner { animation: none; }
+  .cb-layer.is-on { animation: none !important; }
+  .champ-reset { opacity: 1 !important; transform: none !important; }
 }

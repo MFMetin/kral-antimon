@@ -5,7 +5,8 @@
 
 const BG = (function () {
   const canvas = document.getElementById('bg');
-  const ctx = canvas.getContext('2d', { alpha: false });
+  // Saydam: taban gradient CSS'te (body), splash katmanı canvas'ın ALTINDA duruyor
+  const ctx = canvas.getContext('2d');
 
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
@@ -88,18 +89,6 @@ const BG = (function () {
   }
 
   /* -------------------------------------------------------------- çizim */
-  function drawBase() {
-    const g = ctx.createRadialGradient(
-      W * 0.5, H * 0.66, 0,
-      W * 0.5, H * 0.66, Math.max(W, H) * 0.8
-    );
-    g.addColorStop(0.00, '#17120a');
-    g.addColorStop(0.40, '#0c0a08');
-    g.addColorStop(1.00, '#050506');
-    ctx.fillStyle = g;
-    ctx.fillRect(0, 0, W, H);
-  }
-
   function drawDust(dt) {
     ctx.globalCompositeOperation = 'lighter';
     for (const m of dust) {
@@ -179,7 +168,7 @@ const BG = (function () {
     px.cur += (px.tgt - px.cur) * 0.05;
     py.cur += (py.tgt - py.cur) * 0.05;
 
-    drawBase();
+    ctx.clearRect(0, 0, W, H);
     drawDust(dt);
     if (!reduceMotion) drawArrows(dt);
   }

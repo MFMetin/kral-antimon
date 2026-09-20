@@ -28,6 +28,27 @@
   // CONFIG bağlamına typeof ile bakılıyor.
   const cfg = () => (typeof CONFIG === 'object' && CONFIG && CONFIG.rank) || {};
 
+  const bgCfg = () =>
+    (typeof CONFIG === 'object' && CONFIG && CONFIG.champBackground) || {};
+
+  /** Şampiyon kartları tıklanabilir mi? kind: 'recent' | 'mastery' */
+  function canClickChamps(kind) {
+    if (typeof ChampBG === 'undefined') return false;
+    if (bgCfg().enabled === false) return false;
+    if (bgCfg().clickable === 'mastery' && kind !== 'mastery') return false;
+    return true;
+  }
+
+  /** Aktif şampiyonun TÜM kartlarını işaretle (aynı şampiyon iki bölümde olabilir). */
+  function paintActiveChamp(id) {
+    const cards = document.querySelectorAll('.champ[data-champ]');
+    for (const el of cards) {
+      const on = !!id && el.dataset.champ === id;
+      el.classList.toggle('is-active', on);
+      el.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+  }
+
   /* ------------------------------------------------------------------ rozet */
   /* Riot'un resmi mini rank amblemleri (assets/ranked/*.svg).
      Dosya bulunamazsa elle çizilmiş kalkana düşer. */
@@ -116,7 +137,7 @@
   }
 
   /* ------------------------------------------------------------- şampiyonlar */
-  function champRow(list, title) {
+  function champRow(list, title, kind) {
     const box = document.createElement('div');
     box.className = 'champs';
 
@@ -129,8 +150,16 @@
     grid.className = 'champs-grid';
 
     for (const c of list) {
-      const item = document.createElement('div');
+      const clickable = canClickChamps(kind) && !!c.id;
+      const item = document.createElement(clickable ? 'button' : 'div');
       item.className = 'champ';
+
+      if (clickable) {
+        item.type = 'button';
+        item.dataset.champ = c.id;
+        item.setAttribute('aria-pressed', 'false');
+        item.addEventListener('click', () => ChampBG.set(c.id, c.name));
+      }
 
       const pic = document.createElement('div');
       pic.className = 'champ-pic';
@@ -195,12 +224,12 @@
 
     // Son maçlarda en çok oynananlar
     if (cfg().showChamps !== false && data.champions && data.champions.length) {
-      host.appendChild(champRow(data.champions, 'Most played recently'));
+      host.appendChild(champRow(data.champions, 'Most played recently', 'recent'));
     }
 
     // En yüksek ustalık — son maç verisi yoksa tek başına da gösterilir
     if (cfg().showMastery !== false && data.mastery && data.mastery.length) {
-      host.appendChild(champRow(data.mastery, 'Highest mastery'));
+      host.appendChild(champRow(data.mastery, 'Highest mastery', 'mastery'));
     }
 
     // Canlı veriyle çakışan elle yazılmış rozetleri kaldır
@@ -229,6 +258,13 @@
     }
 
     host.hidden = host.children.length === 0;
+
+    // Şampiyon arka planı: kart işaretlemesini bağla ve hatırlanan seçimi geri yükle
+    if (typeof ChampBG !== 'undefined' && bgCfg().enabled !== false) {
+      ChampBG.onChange(paintActiveChamp);
+      const known = [].concat(data.champions || [], data.mastery || []);
+      ChampBG.restore(known);
+    }
   }
 
   async function load() {

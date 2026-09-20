@@ -6,7 +6,7 @@
 
    ÖNEMLİ — değişiklik görünmüyorsa:
    Tarayıcılar css/js dosyalarını önbelleğe alır (GitHub Pages 10 dakika).
-   index.html içindeki "?v=7" sayılarını 8, 9, 10... diye artırırsan herkes
+   index.html içindeki "?v=8" sayılarını 9, 10, 11... diye artırırsan herkes
    yeni sürümü anında görür.
    ========================================================================== */
 
@@ -80,6 +80,17 @@ const CONFIG = {
     showChamps: true,   // "son maçlarda en çok" bölümü
     showMastery: true,  // "en yüksek ustalık" bölümü
     showRecent: false,  // "LAST 20 GAMES ... KDA" satırı
+  },
+
+  /* --- Şampiyon arka planı -------------------------------------------------
+     Şampiyon kartına tıklayınca arka plan o şampiyonun splash art'ına döner.
+     Görseller Riot'un Data Dragon CDN'inden çekilir, repoda dosya tutulmaz. */
+  champBackground: {
+    enabled:   true,
+    clickable: "both",   // "both" = her iki bölüm | "mastery" = sadece ustalık
+    kenBurns:  true,     // yavaş zoom/kaydırma efekti
+    parallax:  true,     // fareyle hafif kayma
+    remember:  true,     // seçimi tarayıcıda hatırla
   },
 
   /* --- Görsel ayarlar ---------------------------------------------------- */
