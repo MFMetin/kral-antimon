@@ -29,11 +29,31 @@
   const cfg = () => (typeof CONFIG === 'object' && CONFIG && CONFIG.rank) || {};
 
   /* ------------------------------------------------------------------ rozet */
+  /* Riot'un resmi mini rank amblemleri (assets/ranked/*.svg).
+     Dosya bulunamazsa elle çizilmiş kalkana düşer. */
+  const EMBLEM_DIR = 'assets/ranked/';
+
   function emblem(tier) {
+    const key = (tier || 'unranked').toLowerCase();
+    const img = document.createElement('img');
+    img.className = 'emblem';
+    img.alt = '';
+    img.loading = 'lazy';
+    img.addEventListener('error', () => {
+      const span = document.createElement('span');
+      span.className = 'emblem emblem-fallback';
+      span.innerHTML = fallbackShield(tier);
+      img.replaceWith(span);
+    });
+    img.src = EMBLEM_DIR + key + '.svg';
+    return img;
+  }
+
+  function fallbackShield(tier) {
     const t = TIERS[tier] || { c1: '#4a433a', c2: '#9b9286' };
     const uid = 'g' + Math.random().toString(36).slice(2, 8);
     return (
-      '<svg class="emblem" viewBox="0 0 48 54" aria-hidden="true">' +
+      '<svg viewBox="0 0 48 54" aria-hidden="true">' +
         '<defs><linearGradient id="' + uid + '" x1="0" y1="0" x2="0" y2="1">' +
           '<stop offset="0" stop-color="' + t.c2 + '"/>' +
           '<stop offset="1" stop-color="' + t.c1 + '"/>' +
@@ -42,8 +62,6 @@
               'fill="url(#' + uid + ')" opacity=".22"/>' +
         '<path d="M24 2 44 10v16c0 14-10 22-20 26C14 48 4 40 4 26V10Z" ' +
               'fill="none" stroke="url(#' + uid + ')" stroke-width="2.5"/>' +
-        '<path d="M24 13 34 18v9c0 7.5-5.5 11.5-10 13.5C19.5 38.5 14 34.5 14 27v-9Z" ' +
-              'fill="url(#' + uid + ')" opacity=".75"/>' +
       '</svg>'
     );
   }
@@ -64,7 +82,7 @@
 
     const badge = document.createElement('div');
     badge.className = 'q-emblem';
-    badge.innerHTML = emblem(q.tier);
+    badge.appendChild(emblem(q.tier));
 
     const info = document.createElement('div');
     info.className = 'q-info';
