@@ -6,7 +6,7 @@
 
    ÖNEMLİ — değişiklik görünmüyorsa:
    Tarayıcılar css/js dosyalarını önbelleğe alır (GitHub Pages 10 dakika).
-   index.html içindeki "?v=5" sayılarını 6, 7, 8... diye artırırsan herkes
+   index.html içindeki "?v=6" sayılarını 7, 8, 9... diye artırırsan herkes
    yeni sürümü anında görür.
    ========================================================================== */
 
@@ -58,7 +58,7 @@ const CONFIG = {
      Liste boş kalırsa müzik çalar otomatik olarak gizlenir, site
      yine de sorunsuz çalışır.                                           */
   playlist: [
-    { title: "Sugar", artist: "Zubi", src: "assets/music/zubi-sugar.mp3" },
+    { title: "Track 1", artist: "", src: "assets/music/track1.mp3" },
     // { title: "İkinci şarkı",    artist: "Sanatçı", src: "assets/music/2.mp3" },
     // { title: "Üçüncü şarkı",    artist: "Sanatçı", src: "assets/music/3.mp3" },
   ],
