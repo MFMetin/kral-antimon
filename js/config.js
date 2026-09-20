@@ -6,7 +6,7 @@
 
    ÖNEMLİ — değişiklik görünmüyorsa:
    Tarayıcılar css/js dosyalarını önbelleğe alır (GitHub Pages 10 dakika).
-   index.html içindeki "?v=2" sayılarını 3, 4, 5... diye artırırsan herkes
+   index.html içindeki "?v=3" sayılarını 4, 5, 6... diye artırırsan herkes
    yeni sürümü anında görür.
    ========================================================================== */
 
@@ -38,17 +38,18 @@ const CONFIG = {
 
   /* --- Sosyal linkler -----------------------------------------------------
      Kullanabileceğin icon değerleri:
-       discord · twitch · youtube · steam · instagram · x · tiktok
-       spotify · opgg · github · link
+       discord · twitch · youtube · steam · instagram · x · tiktok · spotify
+       opgg · leagueofgraphs · github · link
      İstemediğin satırın başına // koyarsan o ikon görünmez.
      Yeni satır eklemek için mevcut birini kopyalaman yeterli.            */
   socials: [
-    { name: "Discord",  url: "https://discord.com/users/KULLANICI_ID",  icon: "discord"  },
-    { name: "Twitch",   url: "https://twitch.tv/KULLANICI_ADI",         icon: "twitch"   },
-    { name: "YouTube",  url: "https://youtube.com/@KULLANICI_ADI",      icon: "youtube"  },
-    { name: "op.gg",    url: "https://op.gg/summoners/tr/Antimon-tilt", icon: "opgg"    },
-    { name: "Steam",    url: "https://steamcommunity.com/id/KULLANICI", icon: "steam"    },
-    { name: "Instagram",url: "https://instagram.com/KULLANICI_ADI",     icon: "instagram"},
+    // Discord: aşağıdaki KULLANICI_ID yerine kendi Discord kullanıcı ID'ni yaz.
+    // Nasıl bulunur: Discord → Ayarlar → Gelişmiş → "Geliştirici Modu"nu aç,
+    // sonra sol altta kendi adına sağ tıkla → "Kullanıcı Kimliğini Kopyala".
+    // 18-19 haneli bir sayı gelir, örn: 312745829301452801
+    { name: "Discord",          url: "https://discord.com/users/KULLANICI_ID",              icon: "discord" },
+    { name: "League of Graphs", url: "https://www.leagueofgraphs.com/summoner/tr/Antimon-tilt", icon: "leagueofgraphs" },
+    { name: "Steam",            url: "https://steamcommunity.com/profiles/76561198201475499/", icon: "steam" },
   ],
 
   /* --- Çalma listesi ------------------------------------------------------

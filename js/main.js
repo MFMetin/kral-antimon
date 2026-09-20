@@ -56,6 +56,12 @@
       '<rect x="2" y="4.5" width="20" height="15" rx="4.5" fill="currentColor"/>' +
       '<text x="12" y="15.4" text-anchor="middle" font-size="8.5" font-weight="700" fill="var(--hole)" font-family="Inter, Segoe UI, sans-serif">OP</text></svg>',
 
+    leagueofgraphs:
+      '<svg viewBox="0 0 24 24" aria-hidden="true">' +
+      '<rect x="2" y="4.5" width="20" height="15" rx="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/>' +
+      '<path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5.6 15.2 9 11.4l2.7 2.3 3.1-4.2 2.6 2.4"/>' +
+      '<circle cx="14.8" cy="9.5" r="1.1" fill="currentColor"/></svg>',
+
     link:
       '<svg viewBox="0 0 24 24" aria-hidden="true">' +
       '<path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M10.5 13.5a4 4 0 0 0 5.7 0l2.6-2.6a4 4 0 0 0-5.7-5.7l-1.3 1.3M13.5 10.5a4 4 0 0 0-5.7 0l-2.6 2.6a4 4 0 0 0 5.7 5.7l1.3-1.3"/></svg>',
