@@ -3,6 +3,11 @@
    ----------------------------------------------------------------------------
    Siteyi kişiselleştirmek için SADECE bu dosyayı düzenlemen yeterli.
    Değişikliği kaydet, tarayıcıda sayfayı yenile (Ctrl+F5). Hepsi bu.
+
+   ÖNEMLİ — değişiklik görünmüyorsa:
+   Tarayıcılar css/js dosyalarını önbelleğe alır (GitHub Pages 10 dakika).
+   index.html içindeki "?v=2" sayılarını 3, 4, 5... diye artırırsan herkes
+   yeni sürümü anında görür.
    ========================================================================== */
 
 const CONFIG = {
