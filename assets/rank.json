@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-09-21T13:36:02.251Z",
+  "updatedAt": "2026-09-21T19:03:05.509Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
     "solo": {
       "tier": "MASTER",
       "division": "I",
-      "lp": 251,
+      "lp": 221,
       "wins": 214,
-      "losses": 197,
+      "losses": 198,
       "winrate": 52,
-      "hotStreak": true
+      "hotStreak": false
     },
     "flex": {
       "tier": "MASTER",
@@ -24,16 +24,25 @@
   },
   "recent": {
     "games": 20,
-    "wins": 12,
-    "losses": 8,
-    "winrate": 60,
-    "kills": 6.9,
-    "deaths": 7.2,
-    "assists": 8.9,
-    "kda": 2.21,
+    "wins": 11,
+    "losses": 9,
+    "winrate": 55,
+    "kills": 7.5,
+    "deaths": 7.5,
+    "assists": 9.3,
+    "kda": 2.24,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
+    {
+      "id": "Kaisa",
+      "name": "Kai'Sa",
+      "games": 5,
+      "wins": 3,
+      "winrate": 60,
+      "kda": 2.74,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Kaisa.png"
+    },
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
@@ -42,15 +51,6 @@
       "winrate": 60,
       "kda": 2.1,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Caitlyn.png"
-    },
-    {
-      "id": "Kaisa",
-      "name": "Kai'Sa",
-      "games": 4,
-      "wins": 3,
-      "winrate": 75,
-      "kda": 2.48,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Kaisa.png"
     },
     {
       "id": "Karma",
