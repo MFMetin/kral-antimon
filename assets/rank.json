@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-09-22T17:08:11.541Z",
+  "updatedAt": "2026-09-22T20:21:13.917Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
     "solo": {
       "tier": "MASTER",
       "division": "I",
-      "lp": 251,
-      "wins": 215,
+      "lp": 311,
+      "wins": 217,
       "losses": 198,
       "winrate": 52,
-      "hotStreak": false
+      "hotStreak": true
     },
     "flex": {
       "tier": "MASTER",
@@ -24,13 +24,13 @@
   },
   "recent": {
     "games": 20,
-    "wins": 11,
-    "losses": 9,
-    "winrate": 55,
-    "kills": 7.8,
-    "deaths": 7.8,
-    "assists": 9.3,
-    "kda": 2.18,
+    "wins": 12,
+    "losses": 8,
+    "winrate": 60,
+    "kills": 7.7,
+    "deaths": 7.5,
+    "assists": 10.3,
+    "kda": 2.4,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
@@ -46,19 +46,19 @@
     {
       "id": "Kaisa",
       "name": "Kai'Sa",
-      "games": 5,
-      "wins": 3,
-      "winrate": 60,
-      "kda": 2.74,
+      "games": 4,
+      "wins": 2,
+      "winrate": 50,
+      "kda": 2.84,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Kaisa.png"
     },
     {
       "id": "Karma",
       "name": "Karma",
-      "games": 1,
-      "wins": 1,
+      "games": 2,
+      "wins": 2,
       "winrate": 100,
-      "kda": 8.33,
+      "kda": 9,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Karma.png"
     }
   ],
@@ -66,7 +66,7 @@
     {
       "id": "Ezreal",
       "name": "Ezreal",
-      "points": 516082,
+      "points": 517944,
       "level": 50,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Ezreal.png"
     },
