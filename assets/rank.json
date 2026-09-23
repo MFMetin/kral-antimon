@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T21:04:31.359Z",
+  "updatedAt": "2026-09-23T23:50:59.230Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
@@ -41,7 +41,7 @@
       "wins": 4,
       "winrate": 67,
       "kda": 2.12,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Caitlyn.png"
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Caitlyn.png"
     },
     {
       "id": "Kaisa",
@@ -50,7 +50,7 @@
       "wins": 2,
       "winrate": 50,
       "kda": 2.84,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Kaisa.png"
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Kaisa.png"
     },
     {
       "id": "Karma",
@@ -59,7 +59,7 @@
       "wins": 3,
       "winrate": 100,
       "kda": 4.85,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Karma.png"
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Karma.png"
     }
   ],
   "mastery": [
@@ -68,22 +68,22 @@
       "name": "Ezreal",
       "points": 517944,
       "level": 50,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Ezreal.png"
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Ezreal.png"
     },
     {
       "id": "Lucian",
       "name": "Lucian",
       "points": 362812,
       "level": 36,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Lucian.png"
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Lucian.png"
     },
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
       "points": 307321,
       "level": 31,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.18.1/img/champion/Caitlyn.png"
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Caitlyn.png"
     }
   ],
-  "ddragonVersion": "16.18.1"
+  "ddragonVersion": "16.19.1"
 }
