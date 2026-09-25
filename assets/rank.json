@@ -1,17 +1,8 @@
 {
-  "updatedAt": "2026-09-24T21:57:17.430Z",
+  "updatedAt": "2026-09-25T00:20:37.230Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
-    "solo": {
-      "tier": "MASTER",
-      "division": "I",
-      "lp": 401,
-      "wins": 220,
-      "losses": 198,
-      "winrate": 53,
-      "hotStreak": true
-    },
     "flex": {
       "tier": "MASTER",
       "division": "I",
@@ -20,6 +11,15 @@
       "losses": 37,
       "winrate": 57,
       "hotStreak": false
+    },
+    "solo": {
+      "tier": "MASTER",
+      "division": "I",
+      "lp": 401,
+      "wins": 220,
+      "losses": 198,
+      "winrate": 53,
+      "hotStreak": true
     }
   },
   "recent": {
