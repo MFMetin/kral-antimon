@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T11:23:34.599Z",
+  "updatedAt": "2026-09-27T15:45:04.987Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
@@ -15,9 +15,9 @@
     "flex": {
       "tier": "MASTER",
       "division": "I",
-      "lp": 414,
-      "wins": 54,
-      "losses": 43,
+      "lp": 420,
+      "wins": 55,
+      "losses": 44,
       "winrate": 56,
       "hotStreak": false
     }
@@ -66,7 +66,7 @@
     {
       "id": "Ezreal",
       "name": "Ezreal",
-      "points": 518873,
+      "points": 519360,
       "level": 50,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Ezreal.png"
     },
@@ -80,7 +80,7 @@
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
-      "points": 312494,
+      "points": 314109,
       "level": 31,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Caitlyn.png"
     }
