@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T15:45:23.557Z",
+  "updatedAt": "2026-09-28T21:35:03.494Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
@@ -15,8 +15,8 @@
     "solo": {
       "tier": "MASTER",
       "division": "I",
-      "lp": 401,
-      "wins": 220,
+      "lp": 431,
+      "wins": 221,
       "losses": 198,
       "winrate": 53,
       "hotStreak": true
@@ -24,13 +24,13 @@
   },
   "recent": {
     "games": 20,
-    "wins": 13,
-    "losses": 7,
-    "winrate": 65,
-    "kills": 7.7,
+    "wins": 14,
+    "losses": 6,
+    "winrate": 70,
+    "kills": 7.5,
     "deaths": 7.4,
-    "assists": 11.1,
-    "kda": 2.53,
+    "assists": 11.4,
+    "kda": 2.56,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
