@@ -1,8 +1,17 @@
 {
-  "updatedAt": "2026-09-29T14:13:33.818Z",
+  "updatedAt": "2026-09-29T19:33:28.792Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
+    "solo": {
+      "tier": "MASTER",
+      "division": "I",
+      "lp": 401,
+      "wins": 221,
+      "losses": 199,
+      "winrate": 53,
+      "hotStreak": false
+    },
     "flex": {
       "tier": "MASTER",
       "division": "I",
@@ -11,26 +20,17 @@
       "losses": 45,
       "winrate": 55,
       "hotStreak": false
-    },
-    "solo": {
-      "tier": "MASTER",
-      "division": "I",
-      "lp": 431,
-      "wins": 221,
-      "losses": 198,
-      "winrate": 53,
-      "hotStreak": true
     }
   },
   "recent": {
     "games": 20,
-    "wins": 14,
-    "losses": 6,
-    "winrate": 70,
-    "kills": 7.5,
-    "deaths": 7.4,
-    "assists": 11.4,
-    "kda": 2.56,
+    "wins": 13,
+    "losses": 7,
+    "winrate": 65,
+    "kills": 7.1,
+    "deaths": 7.2,
+    "assists": 10.9,
+    "kda": 2.5,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
@@ -44,15 +44,6 @@
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Caitlyn.png"
     },
     {
-      "id": "Kaisa",
-      "name": "Kai'Sa",
-      "games": 4,
-      "wins": 2,
-      "winrate": 50,
-      "kda": 2.84,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Kaisa.png"
-    },
-    {
       "id": "Karma",
       "name": "Karma",
       "games": 3,
@@ -60,13 +51,22 @@
       "winrate": 100,
       "kda": 4.85,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Karma.png"
+    },
+    {
+      "id": "Kaisa",
+      "name": "Kai'Sa",
+      "games": 3,
+      "wins": 1,
+      "winrate": 33,
+      "kda": 2.92,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Kaisa.png"
     }
   ],
   "mastery": [
     {
       "id": "Ezreal",
       "name": "Ezreal",
-      "points": 520117,
+      "points": 520508,
       "level": 50,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Ezreal.png"
     },
