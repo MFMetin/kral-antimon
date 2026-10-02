@@ -1,17 +1,8 @@
 {
-  "updatedAt": "2026-10-02T08:50:10.452Z",
+  "updatedAt": "2026-10-02T15:22:30.808Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
-    "solo": {
-      "tier": "MASTER",
-      "division": "I",
-      "lp": 400,
-      "wins": 222,
-      "losses": 201,
-      "winrate": 52,
-      "hotStreak": false
-    },
     "flex": {
       "tier": "MASTER",
       "division": "I",
@@ -20,20 +11,38 @@
       "losses": 45,
       "winrate": 55,
       "hotStreak": false
+    },
+    "solo": {
+      "tier": "MASTER",
+      "division": "I",
+      "lp": 430,
+      "wins": 223,
+      "losses": 201,
+      "winrate": 53,
+      "hotStreak": false
     }
   },
   "recent": {
     "games": 20,
-    "wins": 12,
-    "losses": 8,
-    "winrate": 60,
-    "kills": 6.5,
-    "deaths": 7.3,
-    "assists": 10.8,
-    "kda": 2.36,
+    "wins": 13,
+    "losses": 7,
+    "winrate": 65,
+    "kills": 6.3,
+    "deaths": 7.1,
+    "assists": 11.3,
+    "kda": 2.46,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
+    {
+      "id": "Karma",
+      "name": "Karma",
+      "games": 5,
+      "wins": 5,
+      "winrate": 100,
+      "kda": 4.25,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Karma.png"
+    },
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
@@ -42,15 +51,6 @@
       "winrate": 80,
       "kda": 2.54,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Caitlyn.png"
-    },
-    {
-      "id": "Karma",
-      "name": "Karma",
-      "games": 4,
-      "wins": 4,
-      "winrate": 100,
-      "kda": 4.53,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Karma.png"
     },
     {
       "id": "Viktor",
