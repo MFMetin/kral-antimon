@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-06T19:41:43.676Z",
+  "updatedAt": "2026-10-06T23:33:11.412Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
     "flex": {
-      "tier": "GRANDMASTER",
+      "tier": "MASTER",
       "division": "I",
       "lp": 698,
       "wins": 74,
@@ -41,7 +41,7 @@
       "wins": 5,
       "winrate": 100,
       "kda": 4.25,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Karma.png"
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Karma.png"
     },
     {
       "id": "Caitlyn",
@@ -50,7 +50,7 @@
       "wins": 2,
       "winrate": 67,
       "kda": 1.8,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Caitlyn.png"
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Caitlyn.png"
     },
     {
       "id": "Ezreal",
@@ -59,7 +59,7 @@
       "wins": 1,
       "winrate": 33,
       "kda": 1.93,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Ezreal.png"
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Ezreal.png"
     }
   ],
   "mastery": [
@@ -68,22 +68,22 @@
       "name": "Ezreal",
       "points": 521218,
       "level": 50,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Ezreal.png"
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Ezreal.png"
     },
     {
       "id": "Lucian",
       "name": "Lucian",
       "points": 369204,
       "level": 36,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Lucian.png"
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Lucian.png"
     },
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
       "points": 332665,
       "level": 33,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.19.1/img/champion/Caitlyn.png"
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Caitlyn.png"
     }
   ],
-  "ddragonVersion": "16.19.1"
+  "ddragonVersion": "16.20.1"
 }
