@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-10-10T06:17:48.352Z",
+  "updatedAt": "2026-10-10T12:52:07.400Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
-    "solo": {
-      "tier": "MASTER",
-      "division": "I",
-      "lp": 427,
-      "wins": 226,
-      "losses": 204,
-      "winrate": 53,
-      "hotStreak": false
-    },
     "flex": {
       "tier": "MASTER",
       "division": "I",
-      "lp": 674,
+      "lp": 646,
       "wins": 75,
-      "losses": 58,
+      "losses": 59,
       "winrate": 56,
+      "hotStreak": false
+    },
+    "solo": {
+      "tier": "MASTER",
+      "division": "I",
+      "lp": 426,
+      "wins": 227,
+      "losses": 205,
+      "winrate": 53,
       "hotStreak": false
     }
   },
@@ -27,20 +27,20 @@
     "wins": 13,
     "losses": 7,
     "winrate": 65,
-    "kills": 5.8,
-    "deaths": 7,
-    "assists": 9.8,
-    "kda": 2.23,
+    "kills": 5.3,
+    "deaths": 7.3,
+    "assists": 8.7,
+    "kda": 1.94,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
     {
       "id": "Karma",
       "name": "Karma",
-      "games": 5,
-      "wins": 5,
+      "games": 4,
+      "wins": 4,
       "winrate": 100,
-      "kda": 4.25,
+      "kda": 3.67,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Karma.png"
     },
     {
@@ -73,14 +73,14 @@
     {
       "id": "Lucian",
       "name": "Lucian",
-      "points": 369204,
+      "points": 370830,
       "level": 36,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Lucian.png"
     },
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
-      "points": 333573,
+      "points": 334371,
       "level": 33,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Caitlyn.png"
     }
