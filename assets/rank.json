@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-11T06:09:45.894Z",
+  "updatedAt": "2026-10-11T13:16:20.012Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
     "solo": {
       "tier": "MASTER",
       "division": "I",
-      "lp": 515,
-      "wins": 231,
-      "losses": 206,
+      "lp": 514,
+      "wins": 232,
+      "losses": 207,
       "winrate": 53,
       "hotStreak": false
     },
@@ -24,13 +24,13 @@
   },
   "recent": {
     "games": 20,
-    "wins": 12,
-    "losses": 8,
-    "winrate": 60,
-    "kills": 5.3,
+    "wins": 11,
+    "losses": 9,
+    "winrate": 55,
+    "kills": 5.8,
     "deaths": 7.2,
-    "assists": 8.7,
-    "kda": 1.95,
+    "assists": 8.4,
+    "kda": 1.99,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
@@ -46,10 +46,10 @@
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
-      "games": 3,
-      "wins": 1,
-      "winrate": 33,
-      "kda": 1.86,
+      "games": 4,
+      "wins": 2,
+      "winrate": 50,
+      "kda": 2,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Caitlyn.png"
     },
     {
@@ -80,7 +80,7 @@
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
-      "points": 336916,
+      "points": 338409,
       "level": 33,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Caitlyn.png"
     }
