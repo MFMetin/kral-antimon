@@ -1,8 +1,17 @@
 {
-  "updatedAt": "2026-10-12T18:34:54.633Z",
+  "updatedAt": "2026-10-13T01:06:05.400Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
+    "solo": {
+      "tier": "MASTER",
+      "division": "I",
+      "lp": 483,
+      "wins": 232,
+      "losses": 208,
+      "winrate": 53,
+      "hotStreak": false
+    },
     "flex": {
       "tier": "MASTER",
       "division": "I",
@@ -10,15 +19,6 @@
       "wins": 78,
       "losses": 62,
       "winrate": 56,
-      "hotStreak": false
-    },
-    "solo": {
-      "tier": "MASTER",
-      "division": "I",
-      "lp": 514,
-      "wins": 232,
-      "losses": 207,
-      "winrate": 53,
       "hotStreak": false
     }
   },
@@ -28,19 +28,19 @@
     "losses": 9,
     "winrate": 55,
     "kills": 5.8,
-    "deaths": 7.2,
-    "assists": 8.4,
-    "kda": 1.99,
+    "deaths": 7.4,
+    "assists": 9.3,
+    "kda": 2.05,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
     {
       "id": "Karma",
       "name": "Karma",
-      "games": 4,
+      "games": 5,
       "wins": 4,
-      "winrate": 100,
-      "kda": 4.53,
+      "winrate": 80,
+      "kda": 3.77,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Karma.png"
     },
     {
@@ -53,13 +53,13 @@
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Caitlyn.png"
     },
     {
-      "id": "Ezreal",
-      "name": "Ezreal",
-      "games": 3,
-      "wins": 1,
-      "winrate": 33,
-      "kda": 1.43,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Ezreal.png"
+      "id": "Lucian",
+      "name": "Lucian",
+      "games": 2,
+      "wins": 2,
+      "winrate": 100,
+      "kda": 1.65,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Lucian.png"
     }
   ],
   "mastery": [
