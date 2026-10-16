@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T19:37:54.711Z",
+  "updatedAt": "2026-10-16T22:30:23.695Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
@@ -15,11 +15,11 @@
     "flex": {
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 914,
-      "wins": 85,
-      "losses": 63,
+      "lp": 916,
+      "wins": 86,
+      "losses": 64,
       "winrate": 57,
-      "hotStreak": true
+      "hotStreak": false
     }
   },
   "recent": {
@@ -73,14 +73,14 @@
     {
       "id": "Lucian",
       "name": "Lucian",
-      "points": 376695,
+      "points": 377453,
       "level": 37,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Lucian.png"
     },
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
-      "points": 343878,
+      "points": 345561,
       "level": 34,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Caitlyn.png"
     }
