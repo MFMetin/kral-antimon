@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-10-17T10:08:31.005Z",
+  "updatedAt": "2026-10-17T13:50:10.243Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
     "flex": {
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 947,
-      "wins": 87,
-      "losses": 64,
+      "lp": 980,
+      "wins": 89,
+      "losses": 65,
       "winrate": 58,
       "hotStreak": false
     },
     "solo": {
       "tier": "MASTER",
       "division": "I",
-      "lp": 483,
-      "wins": 232,
+      "lp": 513,
+      "wins": 233,
       "losses": 208,
       "winrate": 53,
       "hotStreak": false
@@ -24,13 +24,13 @@
   },
   "recent": {
     "games": 20,
-    "wins": 11,
-    "losses": 9,
-    "winrate": 55,
-    "kills": 5.8,
-    "deaths": 7.4,
-    "assists": 9.3,
-    "kda": 2.05,
+    "wins": 12,
+    "losses": 8,
+    "winrate": 60,
+    "kills": 5.7,
+    "deaths": 7.2,
+    "assists": 9,
+    "kda": 2.04,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
@@ -53,13 +53,13 @@
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Caitlyn.png"
     },
     {
-      "id": "Lucian",
-      "name": "Lucian",
+      "id": "Jinx",
+      "name": "Jinx",
       "games": 2,
       "wins": 2,
       "winrate": 100,
-      "kda": 1.65,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Lucian.png"
+      "kda": 2.5,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Jinx.png"
     }
   ],
   "mastery": [
@@ -80,7 +80,7 @@
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
-      "points": 345561,
+      "points": 350201,
       "level": 34,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Caitlyn.png"
     }
