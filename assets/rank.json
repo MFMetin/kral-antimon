@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T13:50:10.243Z",
+  "updatedAt": "2026-10-17T16:49:54.416Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
@@ -15,8 +15,8 @@
     "solo": {
       "tier": "MASTER",
       "division": "I",
-      "lp": 513,
-      "wins": 233,
+      "lp": 543,
+      "wins": 234,
       "losses": 208,
       "winrate": 53,
       "hotStreak": false
@@ -27,10 +27,10 @@
     "wins": 12,
     "losses": 8,
     "winrate": 60,
-    "kills": 5.7,
-    "deaths": 7.2,
-    "assists": 9,
-    "kda": 2.04,
+    "kills": 5.6,
+    "deaths": 7.3,
+    "assists": 9.4,
+    "kda": 2.05,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
@@ -40,7 +40,7 @@
       "games": 5,
       "wins": 4,
       "winrate": 80,
-      "kda": 3.77,
+      "kda": 3.71,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Karma.png"
     },
     {
