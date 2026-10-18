@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-10-18T16:05:30.818Z",
+  "updatedAt": "2026-10-18T18:45:54.120Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
     "flex": {
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1230,
-      "wins": 98,
-      "losses": 66,
+      "lp": 1294,
+      "wins": 101,
+      "losses": 67,
       "winrate": 60,
-      "hotStreak": true
+      "hotStreak": false
     },
     "solo": {
       "tier": "MASTER",
@@ -80,7 +80,7 @@
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
-      "points": 356848,
+      "points": 359156,
       "level": 35,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Caitlyn.png"
     }
