@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-21T16:01:56.301Z",
+  "updatedAt": "2026-10-21T20:17:09.474Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
     "solo": {
       "tier": "MASTER",
       "division": "I",
-      "lp": 543,
+      "lp": 512,
       "wins": 234,
-      "losses": 208,
+      "losses": 209,
       "winrate": 53,
       "hotStreak": false
     },
@@ -27,10 +27,10 @@
     "wins": 12,
     "losses": 8,
     "winrate": 60,
-    "kills": 5.6,
+    "kills": 5.5,
     "deaths": 7.3,
-    "assists": 9.4,
-    "kda": 2.05,
+    "assists": 9.5,
+    "kda": 2.06,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
@@ -53,20 +53,20 @@
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Caitlyn.png"
     },
     {
-      "id": "Jinx",
-      "name": "Jinx",
-      "games": 2,
-      "wins": 2,
-      "winrate": 100,
-      "kda": 2.5,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Jinx.png"
+      "id": "Ezreal",
+      "name": "Ezreal",
+      "games": 3,
+      "wins": 1,
+      "winrate": 33,
+      "kda": 1.33,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ezreal.png"
     }
   ],
   "mastery": [
     {
       "id": "Ezreal",
       "name": "Ezreal",
-      "points": 523788,
+      "points": 524436,
       "level": 50,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ezreal.png"
     },
