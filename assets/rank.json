@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-10-23T15:42:13.042Z",
+  "updatedAt": "2026-10-23T19:46:18.009Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
     "solo": {
       "tier": "MASTER",
       "division": "I",
-      "lp": 512,
-      "wins": 234,
+      "lp": 542,
+      "wins": 235,
       "losses": 209,
       "winrate": 53,
       "hotStreak": false
@@ -15,10 +15,10 @@
     "flex": {
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1269,
-      "wins": 103,
-      "losses": 70,
-      "winrate": 60,
+      "lp": 1271,
+      "wins": 104,
+      "losses": 71,
+      "winrate": 59,
       "hotStreak": false
     }
   },
@@ -29,19 +29,28 @@
     "winrate": 60,
     "kills": 5.5,
     "deaths": 7.3,
-    "assists": 9.5,
-    "kda": 2.06,
+    "assists": 9,
+    "kda": 2,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
     {
       "id": "Karma",
       "name": "Karma",
-      "games": 5,
-      "wins": 4,
-      "winrate": 80,
-      "kda": 3.71,
+      "games": 4,
+      "wins": 3,
+      "winrate": 75,
+      "kda": 3.83,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Karma.png"
+    },
+    {
+      "id": "Ezreal",
+      "name": "Ezreal",
+      "games": 4,
+      "wins": 2,
+      "winrate": 50,
+      "kda": 1.35,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ezreal.png"
     },
     {
       "id": "Caitlyn",
@@ -51,29 +60,20 @@
       "winrate": 50,
       "kda": 2,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Caitlyn.png"
-    },
-    {
-      "id": "Ezreal",
-      "name": "Ezreal",
-      "games": 3,
-      "wins": 1,
-      "winrate": 33,
-      "kda": 1.33,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ezreal.png"
     }
   ],
   "mastery": [
     {
       "id": "Ezreal",
       "name": "Ezreal",
-      "points": 524436,
+      "points": 525454,
       "level": 50,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ezreal.png"
     },
     {
       "id": "Lucian",
       "name": "Lucian",
-      "points": 378975,
+      "points": 379712,
       "level": 37,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Lucian.png"
     },
