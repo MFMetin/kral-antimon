@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-24T11:23:50.552Z",
+  "updatedAt": "2026-10-24T14:44:08.653Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
     "flex": {
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1273,
-      "wins": 105,
-      "losses": 72,
+      "lp": 1275,
+      "wins": 106,
+      "losses": 73,
       "winrate": 59,
       "hotStreak": false
     },
