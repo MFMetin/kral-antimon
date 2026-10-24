@@ -1,8 +1,17 @@
 {
-  "updatedAt": "2026-10-24T06:11:34.311Z",
+  "updatedAt": "2026-10-24T11:23:50.552Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
+    "flex": {
+      "tier": "GRANDMASTER",
+      "division": "I",
+      "lp": 1273,
+      "wins": 105,
+      "losses": 72,
+      "winrate": 59,
+      "hotStreak": false
+    },
     "solo": {
       "tier": "MASTER",
       "division": "I",
@@ -10,15 +19,6 @@
       "wins": 235,
       "losses": 209,
       "winrate": 53,
-      "hotStreak": false
-    },
-    "flex": {
-      "tier": "GRANDMASTER",
-      "division": "I",
-      "lp": 1271,
-      "wins": 104,
-      "losses": 71,
-      "winrate": 59,
       "hotStreak": false
     }
   },
@@ -73,7 +73,7 @@
     {
       "id": "Lucian",
       "name": "Lucian",
-      "points": 379712,
+      "points": 380118,
       "level": 37,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Lucian.png"
     },
