@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-10-28T10:27:13.362Z",
+  "updatedAt": "2026-10-28T16:46:35.475Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
     "flex": {
       "tier": "GRANDMASTER",
       "division": "I",
-      "lp": 1315,
-      "wins": 112,
-      "losses": 78,
-      "winrate": 59,
+      "lp": 1256,
+      "wins": 113,
+      "losses": 81,
+      "winrate": 58,
       "hotStreak": false
     },
     "solo": {
       "tier": "MASTER",
       "division": "I",
-      "lp": 288,
-      "wins": 235,
-      "losses": 210,
+      "lp": 323,
+      "wins": 237,
+      "losses": 211,
       "winrate": 53,
       "hotStreak": false
     }
@@ -27,13 +27,22 @@
     "wins": 12,
     "losses": 8,
     "winrate": 60,
-    "kills": 5.4,
-    "deaths": 7.3,
-    "assists": 10,
-    "kda": 2.1,
+    "kills": 7.2,
+    "deaths": 7,
+    "assists": 10.2,
+    "kda": 2.46,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
+    {
+      "id": "Caitlyn",
+      "name": "Caitlyn",
+      "games": 5,
+      "wins": 4,
+      "winrate": 80,
+      "kda": 2.98,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Caitlyn.png"
+    },
     {
       "id": "Karma",
       "name": "Karma",
@@ -46,20 +55,11 @@
     {
       "id": "Ezreal",
       "name": "Ezreal",
-      "games": 4,
-      "wins": 2,
-      "winrate": 50,
-      "kda": 1.35,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ezreal.png"
-    },
-    {
-      "id": "Caitlyn",
-      "name": "Caitlyn",
       "games": 3,
       "wins": 2,
       "winrate": 67,
-      "kda": 2.11,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Caitlyn.png"
+      "kda": 1.29,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ezreal.png"
     }
   ],
   "mastery": [
@@ -80,8 +80,8 @@
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
-      "points": 369059,
-      "level": 36,
+      "points": 375053,
+      "level": 37,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Caitlyn.png"
     }
   ],
