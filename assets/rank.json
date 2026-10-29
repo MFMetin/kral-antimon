@@ -1,36 +1,36 @@
 {
-  "updatedAt": "2026-10-29T07:28:04.703Z",
+  "updatedAt": "2026-10-29T14:36:15.358Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
-    "flex": {
-      "tier": "GRANDMASTER",
-      "division": "I",
-      "lp": 1136,
-      "wins": 113,
-      "losses": 85,
-      "winrate": 57,
-      "hotStreak": false
-    },
     "solo": {
       "tier": "MASTER",
       "division": "I",
-      "lp": 323,
-      "wins": 237,
+      "lp": 355,
+      "wins": 238,
       "losses": 211,
       "winrate": 53,
+      "hotStreak": true
+    },
+    "flex": {
+      "tier": "GRANDMASTER",
+      "division": "I",
+      "lp": 1046,
+      "wins": 113,
+      "losses": 88,
+      "winrate": 56,
       "hotStreak": false
     }
   },
   "recent": {
     "games": 20,
-    "wins": 12,
-    "losses": 8,
-    "winrate": 60,
-    "kills": 7.2,
+    "wins": 13,
+    "losses": 7,
+    "winrate": 65,
+    "kills": 7.5,
     "deaths": 7,
-    "assists": 10.2,
-    "kda": 2.46,
+    "assists": 11.1,
+    "kda": 2.65,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
@@ -73,14 +73,14 @@
     {
       "id": "Lucian",
       "name": "Lucian",
-      "points": 380118,
+      "points": 380972,
       "level": 37,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Lucian.png"
     },
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
-      "points": 377098,
+      "points": 378972,
       "level": 37,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Caitlyn.png"
     }
