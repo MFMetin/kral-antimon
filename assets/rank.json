@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-11-04T15:04:13.669Z",
+  "updatedAt": "2026-11-04T21:23:36.824Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
     "solo": {
       "tier": "MASTER",
       "division": "I",
-      "lp": 329,
-      "wins": 239,
+      "lp": 361,
+      "wins": 240,
       "losses": 213,
       "winrate": 53,
       "hotStreak": false
@@ -27,20 +27,20 @@
     "wins": 12,
     "losses": 8,
     "winrate": 60,
-    "kills": 6.9,
-    "deaths": 7.2,
-    "assists": 11.2,
-    "kda": 2.52,
+    "kills": 7.3,
+    "deaths": 7,
+    "assists": 10.3,
+    "kda": 2.5,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
-      "games": 6,
-      "wins": 5,
-      "winrate": 83,
-      "kda": 2.96,
+      "games": 7,
+      "wins": 6,
+      "winrate": 86,
+      "kda": 3.08,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Caitlyn.png"
     },
     {
@@ -55,10 +55,10 @@
     {
       "id": "Karma",
       "name": "Karma",
-      "games": 4,
-      "wins": 3,
-      "winrate": 75,
-      "kda": 3.83,
+      "games": 3,
+      "wins": 2,
+      "winrate": 67,
+      "kda": 3.58,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Karma.png"
     }
   ],
@@ -71,18 +71,18 @@
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Ezreal.png"
     },
     {
+      "id": "Caitlyn",
+      "name": "Caitlyn",
+      "points": 381581,
+      "level": 37,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Caitlyn.png"
+    },
+    {
       "id": "Lucian",
       "name": "Lucian",
       "points": 380972,
       "level": 37,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Lucian.png"
-    },
-    {
-      "id": "Caitlyn",
-      "name": "Caitlyn",
-      "points": 380404,
-      "level": 37,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Caitlyn.png"
     }
   ],
   "ddragonVersion": "16.22.1"
