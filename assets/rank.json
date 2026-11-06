@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T11:18:16.407Z",
+  "updatedAt": "2026-11-06T18:12:47.699Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
@@ -15,18 +15,18 @@
     "solo": {
       "tier": "MASTER",
       "division": "I",
-      "lp": 393,
+      "lp": 364,
       "wins": 241,
-      "losses": 213,
+      "losses": 214,
       "winrate": 53,
       "hotStreak": false
     }
   },
   "recent": {
     "games": 20,
-    "wins": 12,
-    "losses": 8,
-    "winrate": 60,
+    "wins": 11,
+    "losses": 9,
+    "winrate": 55,
     "kills": 7.7,
     "deaths": 7,
     "assists": 10.6,
@@ -44,22 +44,22 @@
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Caitlyn.png"
     },
     {
-      "id": "Ezreal",
-      "name": "Ezreal",
-      "games": 5,
-      "wins": 2,
-      "winrate": 40,
-      "kda": 1.49,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Ezreal.png"
-    },
-    {
       "id": "Karma",
       "name": "Karma",
-      "games": 3,
+      "games": 4,
       "wins": 2,
-      "winrate": 67,
-      "kda": 3.58,
+      "winrate": 50,
+      "kda": 3.3,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Karma.png"
+    },
+    {
+      "id": "Ezreal",
+      "name": "Ezreal",
+      "games": 4,
+      "wins": 1,
+      "winrate": 25,
+      "kda": 1.39,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Ezreal.png"
     }
   ],
   "mastery": [
