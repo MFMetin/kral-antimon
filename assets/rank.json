@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-14T06:51:44.553Z",
+  "updatedAt": "2026-11-14T13:56:25.209Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
     "solo": {
       "tier": "MASTER",
       "division": "I",
-      "lp": 281,
-      "wins": 243,
-      "losses": 219,
+      "lp": 347,
+      "wins": 246,
+      "losses": 221,
       "winrate": 53,
       "hotStreak": false
     },
@@ -16,50 +16,50 @@
       "tier": "GRANDMASTER",
       "division": "I",
       "lp": 1233,
-      "wins": 124,
-      "losses": 94,
+      "wins": 125,
+      "losses": 95,
       "winrate": 57,
-      "hotStreak": true
+      "hotStreak": false
     }
   },
   "recent": {
     "games": 20,
-    "wins": 9,
-    "losses": 11,
-    "winrate": 45,
-    "kills": 7.3,
-    "deaths": 7,
-    "assists": 8.9,
-    "kda": 2.32,
+    "wins": 10,
+    "losses": 10,
+    "winrate": 50,
+    "kills": 6.7,
+    "deaths": 7.3,
+    "assists": 8.2,
+    "kda": 2.05,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
-      "games": 9,
-      "wins": 6,
-      "winrate": 67,
-      "kda": 3.17,
+      "games": 12,
+      "wins": 7,
+      "winrate": 58,
+      "kda": 2.13,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Caitlyn.png"
-    },
-    {
-      "id": "Ezreal",
-      "name": "Ezreal",
-      "games": 4,
-      "wins": 1,
-      "winrate": 25,
-      "kda": 1.39,
-      "icon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Ezreal.png"
     },
     {
       "id": "Karma",
       "name": "Karma",
-      "games": 2,
-      "wins": 1,
-      "winrate": 50,
-      "kda": 2.31,
+      "games": 3,
+      "wins": 2,
+      "winrate": 67,
+      "kda": 2.86,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Karma.png"
+    },
+    {
+      "id": "Ezreal",
+      "name": "Ezreal",
+      "games": 2,
+      "wins": 0,
+      "winrate": 0,
+      "kda": 1.67,
+      "icon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Ezreal.png"
     }
   ],
   "mastery": [
@@ -73,7 +73,7 @@
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
-      "points": 395345,
+      "points": 401155,
       "level": 39,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Caitlyn.png"
     },
