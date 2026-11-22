@@ -1,8 +1,17 @@
 {
-  "updatedAt": "2026-11-22T07:15:09.354Z",
+  "updatedAt": "2026-11-22T15:31:36.072Z",
   "riotId": "Antimon#tilt",
   "platform": "tr1",
   "queues": {
+    "solo": {
+      "tier": "MASTER",
+      "division": "I",
+      "lp": 250,
+      "wins": 248,
+      "losses": 224,
+      "winrate": 53,
+      "hotStreak": false
+    },
     "flex": {
       "tier": "GRANDMASTER",
       "division": "I",
@@ -11,15 +20,6 @@
       "losses": 101,
       "winrate": 57,
       "hotStreak": false
-    },
-    "solo": {
-      "tier": "MASTER",
-      "division": "I",
-      "lp": 275,
-      "wins": 247,
-      "losses": 222,
-      "winrate": 53,
-      "hotStreak": false
     }
   },
   "recent": {
@@ -27,10 +27,10 @@
     "wins": 9,
     "losses": 11,
     "winrate": 45,
-    "kills": 5.3,
-    "deaths": 7,
-    "assists": 7.3,
-    "kda": 1.8,
+    "kills": 5.9,
+    "deaths": 7.2,
+    "assists": 7.5,
+    "kda": 1.87,
     "queue": "Ranked Solo/Duo"
   },
   "champions": [
@@ -55,10 +55,10 @@
     {
       "id": "Ezreal",
       "name": "Ezreal",
-      "games": 3,
+      "games": 2,
       "wins": 0,
       "winrate": 0,
-      "kda": 1.7,
+      "kda": 3.2,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Ezreal.png"
     }
   ],
@@ -66,14 +66,14 @@
     {
       "id": "Ezreal",
       "name": "Ezreal",
-      "points": 531852,
+      "points": 532683,
       "level": 51,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Ezreal.png"
     },
     {
       "id": "Caitlyn",
       "name": "Caitlyn",
-      "points": 412636,
+      "points": 414227,
       "level": 40,
       "icon": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/Caitlyn.png"
     },
